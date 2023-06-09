@@ -92,7 +92,9 @@ function myValues(object){
 
 function mySortBy(array, callback) {
     let copyArray = [...array];
-    return copyArray.slice().sort((a, b) => {
+
+
+    return copyArray.sort((a, b) => {
       const aValue = callback(a);
       const bValue = callback(b);
   
